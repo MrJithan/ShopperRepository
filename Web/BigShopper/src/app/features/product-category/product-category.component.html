@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+  <h1>Big Shopper</h1>
+  <h4>
+    <button class="btn back-Button" [disabled] = "selectedCategory.categoryId === 0" (click)= "categorySelected(selectedCategory.parentId)"><</button>
+      {{selectedCategory.categoryDescription}} ({{totalCount}})
+  </h4>
+</div>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div class="container-fluid category-container" [hidden] = "categoryList.length === 0">
+      <li *ngFor = "let category of categoryList" (click)= "categorySelected(category.categoryId)">
+        <button class = "btn col-sm-12">{{category.categoryDescription}} ({{category.totalCount}})</button>
+      </li>
+    </div>
+  </div>
+</div>

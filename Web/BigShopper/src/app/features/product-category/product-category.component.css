@@ -1,0 +1,29 @@
+.category-container {
+  min-height: 5em;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li {
+  margin-top: 2px;
+  border-radius: 5px;
+  border: solid;
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  border-width: 1px;
+  list-style-type: none;
+}
+
+.btn {
+  text-align: left;
+}
+
+.back-Button {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  border-radius: 2px;
+  margin-right: 5px;
+  padding: 2px 8px 2px 8px;
+  font-size: bold;
+}
